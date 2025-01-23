@@ -1051,7 +1051,7 @@ Transform:
   m_GameObject: {fileID: 912394864}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.125, z: -0.5}
+  m_LocalPosition: {x: 0, y: -0.32500002, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1196,7 +1196,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   entrance: {fileID: 8215854980804789872, guid: 2678e1cb5526e3243a8abf572d12befd, type: 3}
   rooms:
-  - {fileID: 4507285925874936999, guid: 3b639dae12ad5a14aa813c707204d10f, type: 3}
   - {fileID: 8215854980804789872, guid: 2678e1cb5526e3243a8abf572d12befd, type: 3}
   - {fileID: 3507636827244242979, guid: 1bfb3a4adc575f44ea00b44b4677ff1b, type: 3}
   specialRooms: []
@@ -1209,7 +1208,7 @@ MonoBehaviour:
   - {fileID: 6469869344454454299, guid: 49d2187a398b4034295c90b8bf9bf442, type: 3}
   - {fileID: 3761877309445110900, guid: 760fce744c8c3b043afb93137067da2f, type: 3}
   door: {fileID: 6487834466125391375, guid: 4a6d66cb0377e284ca1dde9290e03480, type: 3}
-  noOfRooms: 25
+  noOfRooms: 50
   roomsLayermask:
     serializedVersion: 2
     m_Bits: 64
@@ -1425,7 +1424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4afa82ae3200b82408d605c3dbdd1e38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: 0.05
+  Damping: 0.1
 --- !u!114 &1345262912
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,9 +1437,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625c14eee3ad46c99df7c7c891ef668a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damping: {x: 0.1, y: 0.1, z: 0.1}
-  ShoulderOffset: {x: 0, y: 0.05, z: 0}
-  VerticalArmLength: 0.25
+  Damping: {x: 0.5, y: 0.5, z: 0.5}
+  ShoulderOffset: {x: 0, y: 0, z: 0}
+  VerticalArmLength: 0.1
   CameraSide: 0
   CameraDistance: 0.5
   AvoidObstacles:
@@ -1504,7 +1503,7 @@ Transform:
   m_GameObject: {fileID: 1345262910}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.125, z: -0.5}
+  m_LocalPosition: {x: 0, y: -0.32500002, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2417,7 +2416,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4459864851295225878}
   serializedVersion: 4
-  m_Mass: 0.5
+  m_Mass: 0.7
   m_Drag: 0
   m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2451,13 +2450,14 @@ MonoBehaviour:
   gravityLayer:
     serializedVersion: 2
     m_Bits: 128
-  gravityStrength: -9.81
+  gravityStrength: -7
   gravityObject: {fileID: 0}
-  gravityDetectionDistance: 10
+  gravityDetectionDistance: 20
   gravityTransitionSpeed: 0.5
   cameraJoint: {fileID: 4459864850234381312}
-  jumpForce: 3
-  moveSpeed: 6
+  jumpForce: 2
+  moveSpeed: 5
+  maxSpeed: 7
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
